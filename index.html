@@ -4,44 +4,74 @@
 	<title>Bootstrap Example</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<!--
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	-->>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!--
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	-->
 	<style>
 	/* Remove the navbar's default margin-bottom and rounded borders */
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
+	.navbar {
+		margin-bottom: 0;
+		border-radius: 0;
+	}
+		
+	/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+	.row.content {height: 450px}
 
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
+	/* Set gray background color and 100% height */
+	.sidenav {
+		padding-top: 20px;
+		background-color: #f1f1f1;
+		height: 100%;
+	}
 
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;}
-    }
-  </style>
+	/* Set black background color, white text and some padding */
+	footer {
+		background-color: #555;
+		color: white;
+		padding: 15px;
+	}
+	/* On small screens, set height to 'auto' for sidenav and grid */
+	@media screen and (max-width: 767px) {
+		.sidenav {
+			height: auto;
+			padding: 15px;
+		}
+		.row.content {height:auto;}
+	}
+	</style>
 </head>
 <body>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<a class="navbar-brand" href="#">Carousel</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul>
+				<form class="form-inline mt-2 mt-md-0">
+					<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+	</header>
 
 <nav class="navbar navbar-inverse">
 	<div class="container-fluid">
@@ -79,53 +109,68 @@
 
 		<div class="col-sm-8 text-left">
 			<h1>Welcome</h1>
+			<h1>Under construction, only placeholder contents now</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			<hr>
 
-			<div style="height:400px">
-				<h3>Test</h3>
-				<p>Lorem ipsum...</p>
+			<div style="height:400px" class="text-center">
+				<h3>Showcase Video</h3>
+				<p>
+				</p>
+				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/61KWtRiqaYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 
 
 
 			<hr>
-		<div class="row text-center">
-			<div class="col-lg-4">
-				<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-				<h2>Heading</h2>
-				<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-				<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+			<div class="h3 text-center">
+				Say hi to our team members! 
 			</div>
-			<div class="col-lg-4">
-				<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-				<h2>Heading</h2>
-				<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-				<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+			<div class="row text-center">
+				<div class="col-lg-4">
+					<img class="rounded-circle" src="images/q.jpg" alt="Generic placeholder image" width="140" height="140">
+					<h2>Jiarong Qiu</h2>
+					<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+					<p><a class="btn btn-secondary" href="https://www.linkedin.com/in/jiarong-qiu-cv/" role="button">View details »</a></p>
 				</div>
-			<div class="col-lg-4">
-				<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-				<h2>Heading</h2>
-				<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-				<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-			</div>
-		</div>
-
-		<div class="row text-center">
-			<div class="col-lg-6">
-				<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-				<h2>Heading</h2>
-				<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-				<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+				<div class="col-lg-4">
+					<img class="rounded-circle" src="images/c.jpg" alt="Generic placeholder image" width="140" height="140">
+					<h2>Wei Cheng</h2>
+					<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+					<p><a class="btn btn-secondary" href="https://www.linkedin.com/in/wei-cheng95/" role="button">View details »</a></p>
+					</div>
+				<div class="col-lg-4">
+					<img class="rounded-circle" src="images/s.jpg" alt="Generic placeholder image" width="140" height="140">
+					<h2>Sairam Kamal Raj</h2>
+					<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+					<p><a class="btn btn-secondary" href="https://www.linkedin.com/in/sairam-k-raj-at-usc/" role="button">View details »</a></p>
 				</div>
-			<div class="col-lg-6">
-				<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-				<h2>Heading</h2>
-				<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-				<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
 			</div>
-		</div>
+	
+			<div class="row text-center">
+				<div class="col-lg-6">
+					<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+					<h2>Bin Chen</h2>
+					<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+					</div>
+				<div class="col-lg-6">
+					<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+					<h2>Shuwei Shi</h2>
+					<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+					<p><a class="btn btn-secondary" href="https://www.linkedin.com/in/shuwei-shi-1b2306bb/" role="button">View details »</a></p>
+				</div>
+			</div>
 
+
+			<div style="height:400px" class="text-center">
+				<h3>Paper</h3>
+				<p>
+					Checkout our paper! 
+				</p>
+				<iframe src="/pdf/dummy.pdf" width="100%" height="500px"></iframe>
+				
+			</div>
 
 
 
