@@ -15,11 +15,20 @@
 
     <!-- Favicons -->
 	<link rel="apple-touch-icon" href="https://getbootstrap.com/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-	<link rel="icon" href="https://getbootstrap.com/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+	<link rel="shortcut icon" href="https://www.pommerman.com//favicon.ico">
+
+	<!--
 	<link rel="icon" href="https://getbootstrap.com/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="https://getbootstrap.com/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+	-->
+
 	<link rel="manifest" href="https://getbootstrap.com/docs/4.4/assets/img/favicons/manifest.json">
 	<link rel="mask-icon" href="https://getbootstrap.com/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+
+	<!--
 	<link rel="icon" href="https://getbootstrap.com/docs/4.4/assets/img/favicons/favicon.ico">
+	-->
+
 	<meta name="msapplication-config" content="https://getbootstrap.com/docs/4.4/assets/img/favicons/browserconfig.xml">
 	<meta name="theme-color" content="#563d7c">
 	<style>
@@ -44,7 +53,6 @@
 <body>
 	<header>
 		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-			<a class="navbar-brand" href="#">Carousel</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -54,10 +62,28 @@
 						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
+						<a class="nav-link" href="#Introduction">Introduction</a>
+
 					</li>
 					<li class="nav-item">
-						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+						<a class="nav-link" href="#Team">Team</a>
+
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Tools">Tools</a>
+
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Model">Model</a>
+
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Demo">Demo</a>
+
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Paper">Paper</a>
+
 					</li>
 				</ul>
 
@@ -81,12 +107,12 @@
 			</div >
 		</div><!-- /.row -->
 
-		<div class="container marketing" >
+		<div class="container marketing" id="Introduction">>
 
 		<!-- Three columns of text below the carousel -->
 			<!--<div class="row text-center" style="background-color:rgb(188,129,77);">
 	   		-->
-			<div class="row text-center" style="margin-top:30px">
+			<div class="row text-center" style="margin-top:30px" id="Introduction">
 				<div class="col">
 				<h1>Introduction</h1>
 					<!--
@@ -97,7 +123,7 @@
 			</div><!-- /.row -->
 
 			<hr class="featurette-divider">
-			<div class="row text-center">
+			<div class="row text-center" id="Team">
 				<h2>Come meet our team members!</h2>
 			</div>
 			<div class="row">
@@ -110,13 +136,14 @@
 				<div class="col-lg-4">
 					<img class="rounded-circle" src="images/c.jpg" alt="Generic placeholder image" width="140" height="140">
 					<h2>Wei Cheng</h2>
-					<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+					<p>CS Master student at USC. In Pommerman Fight I am responsible for optimizing reward shape and deploy training in A2C/PPO algorithm with RLlib and rwightman framework.
+					</p>
 					<p><a class="btn btn-secondary" href="https://www.linkedin.com/in/wei-cheng95/" role="button">View details »</a></p>
 				</div><!-- /.col-lg-4 -->
 				<div class="col-lg-4">
 					<img class="rounded-circle" src="images/s.jpg" alt="Generic placeholder image" width="140" height="140">
 					<h2>Sairam Kamal Raj</h2>
-					<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+					<p>CS Master student at USC. Contributed in training our agent using several RL algorithms and developing statistical report of its performances and comparing efficiencies of several RL algos</p>
 					<p><a class="btn btn-secondary" href="https://www.linkedin.com/in/sairam-k-raj-at-usc/" role="button">View details »</a></p>
 
 				</div><!-- /.col-lg-4 -->
@@ -145,7 +172,7 @@
 
 			<hr class="featurette-divider">
 
-			<div class="row featurette">
+			<div class="row featurette" id="Tools">
 				<div class="col-md-5">
 					<h4 class="featurette-heading">Training Tools </h4>
 					<h5>RLlib</h5>
@@ -170,7 +197,7 @@
 
 			<hr class="featurette-divider">
 
-			<div class="row featurette">
+			<div class="row featurette" id="Model">
 				<div class="col-md-7">
 					<img  class="img-fluid" src="images/model.jpg" alt="Generic placeholder image"  height="500">
 				</div>
@@ -188,7 +215,7 @@
 			</div>
 
 			<hr class="featurette-divider">
-			<div class="row text-center" style="margin-top:30px">
+			<div class="row text-center" style="margin-top:30px" id="Demo">
 				<div class="col">
 				<h1>Demo</h1>
 
@@ -197,11 +224,11 @@
 			</div><!-- /.row -->
 
 			<hr class="featurette-divider">
-			<div class="row featurette">
+			<div class="row featurette" id="Paper">
 				<div class="col-md-6">
-					<h2 class="featurette-heading">Come checkout our paper here. 
+					<h3 class="featurette-heading">Come checkout our paper here. 
 						<span class="text-muted">
-							<a href="/pdf/dummy.pdf">Click me. </a></span></h2>
+							<a href="/pdf/dummy.pdf">Click me. </a></span></h3>
 				</div>
 				<div class="col-md-6">
 					<img  class="img-fluid" src="images/anime.gif" alt="Generic placeholder image"  height="500">
@@ -223,7 +250,7 @@
   <!-- FOOTER -->
 		<footer class="container">
 			<p class="float-right"><a href="#">Back to top</a></p>
-			<p>&copy; 2017-2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+			<p>&copy; 2020 </p>
 		</footer>
 	</main>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
